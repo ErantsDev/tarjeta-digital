@@ -1,0 +1,84 @@
+:root {
+    --ink: #0e1430;
+    --ink-2: #161e45;
+    --gold: #d9a520;
+    --gold-soft: #f4e2ad;
+    --bg: #f3f4f8;
+    --surface: #ffffff;
+    --text: #1b2033;
+    --muted: #6b7189;
+    --border: #e4e6ef;
+    --radius: 16px;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.app-dark {
+    --bg: #0b0f22;
+    --surface: #131a38;
+    --text: #e8eaf4;
+    --muted: #9198b5;
+    --border: #232c57;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+
+.panel-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.panel-title .step {
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.page-head h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.page-head p {
+    margin: 0.3rem 0 1.5rem;
+    color: var(--muted);
+}
+
+.mono {
+    font-family: var(--mono);
+}
